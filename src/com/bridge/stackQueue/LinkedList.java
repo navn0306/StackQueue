@@ -45,7 +45,7 @@ public class LinkedList {
     }
 
 
-    //All the required methods for STACK
+    //All the required methods for QUEUE
 
     public void addInQueue(int data) {
         Node node = new Node(data);
