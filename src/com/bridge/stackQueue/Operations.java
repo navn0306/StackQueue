@@ -7,7 +7,7 @@ public class Operations {
     public static void main(String[] args) {
         Stack stack = new Stack();
         Queue queue = new Queue();
-
+      
         System.out.println("For Stack operations enter 1\n"+ "For Queue operations press 2");
         Scanner c = new Scanner(System.in);
         int ch = c.nextInt();
