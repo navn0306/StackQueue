@@ -11,15 +11,15 @@ public class Stack {
         l1.insert(56);
     }
 
-    public void showElements(){
-        l1.display();
+    public void showElements() {
+        l1.displayStack();
     }
 
-    public void peek(){
-        l1.topElement();
+    public void peek() {
+        l1.topElementOfStack();
     }
 
-    public void pop(){
+    public void pop() {
         System.out.println("After pop operation, the present elements are: ");
         l1.delete();
     }
