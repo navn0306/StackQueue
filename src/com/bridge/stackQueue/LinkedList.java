@@ -32,7 +32,6 @@ public class LinkedList {
         if (top == null) {
             System.out.println("Stack is empty!");
         } else {
-            //System.out.println("\nPoped element is : " + data);
             top = top.next;
         }
     }

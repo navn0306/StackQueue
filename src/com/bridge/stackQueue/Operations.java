@@ -16,8 +16,5 @@ public class Operations {
         stack.peek();
         stack.pop();
         stack.showElements();
-
-
-
     }
 }
