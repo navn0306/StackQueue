@@ -6,9 +6,9 @@ public class Stack {
     LinkedList l1 = new LinkedList();
 
     public void push() {
-        l1.insert(70);
-        l1.insert(30);
-        l1.insert(56);
+        l1.insertInStack(70);
+        l1.insertInStack(30);
+        l1.insertInStack(56);
     }
 
     public void showElements() {
@@ -21,6 +21,6 @@ public class Stack {
 
     public void pop() {
         System.out.println("After pop operation, the present elements are: ");
-        l1.delete();
+        l1.deleteFromStack();
     }
 }

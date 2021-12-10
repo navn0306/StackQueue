@@ -8,7 +8,7 @@ public class Operations {
         Stack stack = new Stack();
         Queue queue = new Queue();
 
-        System.out.println("For Stack operations enter 1\n"+ "For Queue operations press 2");
+        System.out.println("For Stack operations enter 1\n" + "For Queue operations press 2");
         Scanner c = new Scanner(System.in);
         int ch = c.nextInt();
         switch (ch) {
@@ -25,11 +25,21 @@ public class Operations {
                 stack.pop();
                 stack.showElements();
                 break;
+
             case 2:
                 queue.enQueue();
+                queue.showElementsOfQueue();
                 queue.peek();
-                queue.showData();
+                queue.deQueue();
+                queue.showElementsOfQueue();
+                queue.peek();
+                queue.deQueue();
+                queue.showElementsOfQueue();
+                queue.peek();
+                queue.deQueue();
+                queue.showElementsOfQueue();
                 break;
+
             default:
         }
     }
