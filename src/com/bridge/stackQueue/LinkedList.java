@@ -15,7 +15,20 @@ public class LinkedList {
         }
     }
 
-    public void display() {
+    public void addInQueue(int data) {
+        Node node = new Node(data);
+        if (top == null) {
+            top = node;
+        } else {
+            Node current = top;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = node;
+        }
+    }
+
+    public void displayStack() {
         Node current = top;
         if (current == null) {
             System.out.println("Stack is Empty");
@@ -27,6 +40,19 @@ public class LinkedList {
         }
     }
 
+    public void displayQueue() {
+        Node current = top;
+        if (current == null) {
+            System.out.println("Stack is Empty");
+        }
+
+        while (current != null) {
+            System.out.print(current.data + " ");
+            current = current.next;
+        }
+
+    }
+
     public void delete() {
 
         if (top == null) {
@@ -36,9 +62,11 @@ public class LinkedList {
         }
     }
 
-    public void topElement() {
+    public void topElementOfStack() {
+        System.out.println("\nTop element of Stack is : " + top.data);
+    }
 
-        System.out.println("\nTop element of Stack is : " +top.data);
-
+    public void frontElementOfQueue() {
+        System.out.println("\nFront element of Queue is : " + top.data);
     }
 }
