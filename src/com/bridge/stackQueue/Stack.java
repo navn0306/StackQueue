@@ -11,7 +11,7 @@ public class Stack {
         l1.insert(56);
     }
 
-    public void pop(){
+    public void showElements(){
         l1.display();
     }
 }

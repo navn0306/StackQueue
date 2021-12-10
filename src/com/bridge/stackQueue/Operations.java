@@ -6,7 +6,7 @@ public class Operations {
         Stack stack = new Stack();
 
         stack.push();
-        stack.pop();
+        stack.showElements();
 
 
     }

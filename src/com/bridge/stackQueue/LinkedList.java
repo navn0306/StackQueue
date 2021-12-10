@@ -1,7 +1,8 @@
 package com.bridge.stackQueue;
 
 public class LinkedList {
-Node top;
+    Node top;
+
     public void insert(int data) {
         Node node = new Node(data);
         node.data = data;
@@ -10,7 +11,7 @@ Node top;
             top = node;
         } else {
             node.next = top;
-            top=node;
+            top = node;
         }
     }
 
@@ -22,4 +23,5 @@ Node top;
             current = current.next;
         }
     }
+
 }
