@@ -7,6 +7,16 @@ public class Operations {
 
         stack.push();
         stack.showElements();
+        stack.peek();
+        stack.pop();
+        stack.showElements();
+        stack.peek();
+        stack.pop();
+        stack.showElements();
+        stack.peek();
+        stack.pop();
+        stack.showElements();
+
 
 
     }

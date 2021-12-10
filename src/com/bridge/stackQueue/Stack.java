@@ -14,4 +14,13 @@ public class Stack {
     public void showElements(){
         l1.display();
     }
+
+    public void peek(){
+        l1.topElement();
+    }
+
+    public void pop(){
+        System.out.println("After pop operation, the present elements are: ");
+        l1.delete();
+    }
 }

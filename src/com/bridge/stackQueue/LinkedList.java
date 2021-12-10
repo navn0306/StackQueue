@@ -17,6 +17,9 @@ public class LinkedList {
 
     public void display() {
         Node current = top;
+        if (current == null) {
+            System.out.println("Stack is Empty");
+        }
 
         while (current != null) {
             System.out.print(current.data + " ");
@@ -24,4 +27,19 @@ public class LinkedList {
         }
     }
 
+    public void delete() {
+
+        if (top == null) {
+            System.out.println("Stack is empty!");
+        } else {
+            //System.out.println("\nPoped element is : " + data);
+            top = top.next;
+        }
+    }
+
+    public void topElement() {
+
+        System.out.println("\nTop element of Stack is : " +top.data);
+
+    }
 }
